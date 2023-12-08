@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-image: url('tem.jpg');
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .login-form {
+            opacity: .8;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            color:black;
+            font-weight: 1000;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: black;
+            border-radius: 4px;
+            background-color: black;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #271f1f;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="login-form">
+        <form>
+            <div class="form-group">
+                <label for="Fahrenheit">Fahrenheit</label>
+                <input type="number" id="Fahrenheit" oninput="convertTemperatures(this.value)" onchange="convertTemperatures(this.value)">
+            </div>
+            <div class="form-group">
+                <label for="Celsius">Celsius</label>
+                <input class="display-box" type="number" id="celsius">
+            </div>
+            <div class="form-group">
+                <label for="Kelvin">Kelvin</label>
+                <input class="display-box" type="number" id="kelvin">
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript" src="temps.js"></script>
+</body>
+</html>
